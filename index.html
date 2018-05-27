@@ -17,19 +17,21 @@
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<!-- Photobox  -->
+			<!--inicio-->
 			<section>
-				<img src="imagem/foundation.png" class="diferente">	
+				<img src="imagem/foundation.png" class="diferente">	<br>
 				<ul>
-					<li class="fragment fade-down">Keisy Barbosa nº 24</li>
-					<li class="fragment fade-down">Leonardo Felix nº 27</li>
-					<li class="fragment fade-down">Lucas Wendel nº 29</li>
-					<li class="fragment fade-down">Yasmim Rocha nº 44</li>
-					<li class="fragment fade-up">Jessica Costa nº 19</li>
+					<li class="fragment fade-down">Francisco Túlio</li>
+					<li class="fragment fade-down">Giselle Kelvien</li>
+					<li class="fragment fade-down">Jessica Costa</li>
+					<li class="fragment fade-down">Keisy Barbosa</li>
+					<li class="fragment fade-down">Leonardo Felix</li>
+					<li class="fragment fade-down">Lucas Wendel</li>
+					<li class="fragment fade-up">Yasmim Rocha</li>
 				</ul>
 			</section>
 			<section>
-				<p>PLUGINS</p>
+				<p>Plugins</p>
 				<ol>
 					<li class="fragment grow">Photobox</li>
 					<li class="fragment grow">SlideOut</li>
@@ -40,23 +42,28 @@
 				</ol>
 			</section>
 			<section>
+				<p>Zurb Foundation</p>
+			</section>
+			<section>
 				<section>
-					<p class="fragment highlight-red">PHOTOBOX</p>
+					<p class="fragment highlight-red">Photobox</p>
 				</section>
 				<section> 
+					<span>Tags básicas</span>
 					<img src="imagem/photobox1.png">
 				</section>
 				<section>
 					<img src="imagem/photobox2.png">
 				</section>
 				<section>
+					<span>Configurações básicas</span>
 					<img src="imagem/photobox3.png" width="60%">
 				</section>
 			</section>
 			<!--fakeloader-->
 			<section>
 				<section>
-					<p class="fragment highlight-red">FAKELOADER</p>
+					<p class="fragment highlight-red">Fakeloader</p>
 				</section>
 				<section>
 					<img src="imagem/fakeloader.png" width="50%">
@@ -65,30 +72,84 @@
 					<img src="imagem/fakeloader2.png">
 				</section>
 			</section>
-			
 			<!--sweetModal-->
 			<section>
 				<section>
-					<p class="fragment highlight-red">SWEET MODAL</p>
+					<p class="fragment highlight-red">SweetModal</p>
+				</section>
+				<section>
+					<p>Doce, fácil e poderoso.</p>
 				</section>
 				<section>
 					<img src="imagem/sweetmodal.png">
 				</section>
-			</section>
-			<section>
-				<section><p>SLIDEOUT</p></section>
 				<section>
-					<img src="">
+					<span>Alerta simples</span>
+<pre>
+	<code>
+		$.sweetModal("Olá Mundo");
+	</code>
+</pre>
 				</section>
+			</section>
+			<!--ScrollUP-->
+			<section>
+				<section>
+					<p class="fragment highlight-red">ScrollUp</p>
+				</section>
+				<section>
+					<p>ScrollUp é um plugin jQuery leve para criar um recurso
+					personalizável &quot;Scroll to top&quot; que 
+					funcionará com qualquer site,
+					com facilidade.</p>
+				</section>
+				<section>
+					<p>Como usar</p>
+					<span>
+						Basta incluir o <span class="fragment highlight-blue">jquery.scrollUp.min.js</span> arquivo e colocar o seguinte no cabeçalho do documento (verifique se o jQuery está incluído).
+					</span>
+				</section>
+				<section>
+					<p>Configuração mínima</p>
+<pre>
+	<code>
+		$(function(){
+			$.scrollUp();
+		});
+	</code>
+</pre>
+				</section>
+				<section>
+					<p>Totalmente personalizável</p>
+					<span>
+						O ScrollUp é totalmente personalizável através de <span class="fragment highlight-blue">CSS</span>, o que
+						facilita a adaptação ao seu projeto. Basta segmentar o ID gerado
+						pelo scrollUp no seu arquivo CSS e definir seus estilos.
+					</span>
+<pre>
+	<code>
+		<span style="color: #ff0001;">#scrollUp</span>{
+			bottom: <span style="color: #1b91ff;">20px</span>;
+			right:  <span style="color: #1b91ff;">20px</span>;
+			padding:  <span style="color: #1b91ff;">10px 20px</span>;
+			background:  <span style="color:#cccc;">#</span><span style="color: #1b91ff;">555</span>;
+			color:  <span style="color:#cccc;">#</span><span style="color: #1b91ff;">fff</span>;
+		}
+</code>
+</pre>
+				</section>
+			</section>
+			<!--SlideOut-->
+			<section>
+				<p class="fragment highlight-red">SlideOut</p>
+			</section>
+			<!--Parallax-->
+			<section>
+				<p class="fragment highlight-red">Parallax</p>
 			</section>
 		</div>
 	</div>
 <script type="text/javascript" src="js/reveal.js"></script>
-<script type="text/javascript">
-	Reveal.initialize({
-		transition: "zoom"
-	});
-	Reveal.slide(1);
-</script>
+<script type="text/javascript" src="js/configuracaoBasicas.js"></script>
 </body>
 </html>

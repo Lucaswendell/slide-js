@@ -1,167 +1,190 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Foundation - Zurb Foundation</title>
-	<link rel="stylesheet" type="text/css" href="css/reveal.css">
-	<link rel="stylesheet" type="text/css" href="css/theme/black.css">
-	<meta charset="utf-8">
-	<style type="text/css">
-		.diferente{
-			border-radius: 50% 50%;
-			border: none;
-			width: 200px;
-		}
+    <title>Foundation - Zurb Foundation</title>
+    <link rel="stylesheet" type="text/css" href="css/reveal.css">
+    <link rel="stylesheet" type="text/css" href="css/theme/black.css">
+    <meta charset="utf-8">
+    <style type="text/css">
+    .diferente{
+        border-radius: 50% 50%;
+        border: none;
+        width: 200px;
+    }
 
-	</style>
+</style>
 </head>
 <body>
-	<div class="reveal">
-		<div class="slides">
-			<!--inicio-->
-			<section>
-				<img src="imagem/foundation.png" class="diferente">	<br>
-				<ul>
-					<li class="fragment fade-down">Francisco Túlio</li>
-					<li class="fragment fade-down">Giselle Kelvien</li>
-					<li class="fragment fade-down">Jessica Costa</li>
-					<li class="fragment fade-down">Keisy Barbosa</li>
-					<li class="fragment fade-down">Leonardo Félix</li>
-					<li class="fragment fade-down">Lucas Wendel</li>
-					<li class="fragment fade-up">Yasmim Rocha</li>
-				</ul>
-			</section>
-			<section>
-				<p>Plugins</p>
-				<ol>
-					<li class="fragment grow">Photobox</li>
-					<li class="fragment grow">SlideOut</li>
-					<li class="fragment grow">SweetModal</li>
-					<li class="fragment grow">ScrollUp</li>				
-					<li class="fragment grow">Fakeloader</li>
-					<li class="fragment grow">Parallax</li>
-				</ol>
-			</section>
-			<section>
-				<p>Zurb Foundation</p>
-			</section>
-			<section>
-				<section>
-					<p class="fragment highlight-red">Photobox</p>
-				</section>
-				<section> 
-					<span>Tags básicas</span>
-					<img src="imagem/photobox1.png">
-				</section>
-				<section>
-					<img src="imagem/photobox2.png">
-				</section>
-				<section>
-					<span>Configurações básicas</span>
-					<img src="imagem/photobox3.png" width="60%">
-				</section>
-			</section>
-			<!--fakeloader-->
-			<section>
-				<section>
-					<p class="fragment highlight-red">Fakeloader</p>
-				</section>
-				<section>
-					<img src="imagem/fakeloader.png" width="50%">
-				</section>
-				<section>
-					<p>opções</p>
-					<img src="imagem/fakeloader2.png">
-				</section>
-			</section>
-			<!--sweetModal-->
-			<section>
-				<section>
-					<p class="fragment highlight-red">SweetModal</p>
-				</section>
-				<section>
-					<p>Doce, fácil e poderoso.</p>
-				</section>
-				<section>
-					<img src="imagem/sweetmodal.png">
-				</section>
-				<section>
-					<span>Alerta simples</span>
+    <div class="reveal">
+        <div class="slides">
+            <!--inicio-->
+            <section>
+                <img src="imagem/foundation.png" class="diferente"> <br>
+                <ul>
+                    <li class="fragment fade-down">Francisco Túlio</li>
+                    <li class="fragment fade-down">Giselle Kelvien</li>
+                    <li class="fragment fade-down">Jessica Costa</li>
+                    <li class="fragment fade">Keisy Barbosa</li>
+                    <li class="fragment fade-down">Leonardo Félix</li>
+                    <li class="fragment fade-down">Lucas Wendel</li>
+                    <li class="fragment fade-up">Yasmim Rocha</li>
+                </ul>
+            </section>
+            <section>
+                <p>Plugins</p>
+                <ol>
+                    <li class="fragment grow">Photobox</li>
+                    <li class="fragment grow">SlideOut</li>
+                    <li class="fragment grow">SweetModal</li>
+                    <li class="fragment grow">ScrollUp</li>             
+                    <li class="fragment grow">Fakeloader</li>
+                    <li class="fragment grow">Parallax</li>
+                </ol>
+            </section>
+            <section>
+                <p>Zurb Foundation</p>
+            </section>
+            <section>
+                <section>
+                    <p class="fragment highlight-red">Photobox</p>
+                </section>
+                <section> 
+                    <span>Tags básicas</span>
+                    <img src="imagem/photobox1.png">
+                </section>
+                <section>
+                    <img src="imagem/photobox2.png">
+                </section>
+                <section>
+                    <span>Configurações básicas</span>
+                    <img src="imagem/photobox3.png" width="60%">
+                </section>
+            </section>
+            <!--fakeloader-->
+            <section>
+                <section>
+                    <p class="fragment highlight-red">Fakeloader</p>
+                </section>
+                <section>
+                    <img src="imagem/fakeloader.png" width="50%">
+                </section>
+                <section>
+                    <p>opções</p>
+                    <img src="imagem/fakeloader2.png">
+                </section>
+            </section>
+            <!--sweetModal-->
+            <section>
+                <section>
+                    <p class="fragment highlight-red">SweetModal</p>
+                </section>
+                <section>
+                    <p>Doce, fácil e poderoso.</p>
+                </section>
+                <section>
+                    <img src="imagem/sweetmodal.png">
+                </section>
+                <section>
+                    <span>Alerta simples</span>
 <pre>
-	<code>
-		$.sweetModal("Olá Mundo");
-	</code>
+    <code>
+        $.sweetModal("Olá Mundo");
+    </code>
 </pre>
-				</section>
-			</section>
-			<!--ScrollUP-->
-			<section>
-				<section>
-					<p class="fragment highlight-red">ScrollUp</p>
-				</section>
-				<section>
-					<p>ScrollUp é um plugin jQuery leve para criar um recurso
-					personalizável &quot;Scroll to top&quot; que 
-					funcionará com qualquer site,
-					com facilidade.</p>
-				</section>
-				<section>
-					<p>Como usar</p>
-					<span>
-						Basta incluir o <span class="fragment highlight-blue">jquery.scrollUp.min.js</span> arquivo e colocar o seguinte no cabeçalho do documento (verifique se o jQuery está incluído).
-					</span>
-				</section>
-				<section>
-					<p>Configuração mínima</p>
+                </section>
+            </section>
+            <!--ScrollUP-->
+            <section>
+                <section>
+                    <p class="fragment highlight-red">ScrollUp</p>
+                </section>
+                <section>
+                    <p>ScrollUp é um plugin jQuery leve para criar um recurso
+                        personalizável &quot;Scroll to top&quot; que 
+                        funcionará com qualquer site,
+                    com facilidade.</p>
+                </section>
+                <section>
+                    <p>Como usar</p>
+                    <span>
+                        Basta incluir o <span class="fragment highlight-blue">jquery.scrollUp.min.js</span> arquivo e colocar o seguinte no cabeçalho do documento (verifique se o jQuery está incluído).
+                    </span>
+                </section>
+                <section>
+                    <p>Configuração mínima</p>
 <pre>
-	<code>
-		$(function(){
-			$.scrollUp();
-		});
-	</code>
+    <code>
+       $(function(){
+           $.scrollUp();
+       });
+    </code>
 </pre>
-				</section>
-				<section>
-					<p>Totalmente personalizável</p>
-					<span>
-						O ScrollUp é totalmente personalizável através de <span class="fragment highlight-blue">CSS</span>, o que
-						facilita a adaptação ao seu projeto. Basta segmentar o ID gerado
-						pelo scrollUp no seu arquivo CSS e definir seus estilos.
-					</span>
+            </section>
+            <section>
+                <p>Totalmente personalizável</p>
+                <span>
+                    O ScrollUp é totalmente personalizável através de <span class="fragment highlight-blue">CSS</span>, o que
+                    facilita a adaptação ao seu projeto. Basta segmentar o ID gerado
+                    pelo scrollUp no seu arquivo CSS e definir seus estilos.
+                </span>
 <pre>
-	<code>
-		<span style="color: #ff0001;">#scrollUp</span>{
-			bottom: <span style="color: #1b91ff;">20px</span>;
-			right:  <span style="color: #1b91ff;">20px</span>;
-			padding:  <span style="color: #1b91ff;">10px 20px</span>;
-			background:  <span style="color:#cccc;">#</span><span style="color: #1b91ff;">555</span>;
-			color:  <span style="color:#cccc;">#</span><span style="color: #1b91ff;">fff</span>;
-		}
-</code>
+    <code>
+        <span style="color: #ff0001;">#scrollUp</span>{
+        bottom: <span style="color: #1b91ff;">20px</span>;
+        right:  <span style="color: #1b91ff;">20px</span>;
+        padding:  <span style="color: #1b91ff;">10px 20px</span>;
+        background:  <span style="color:#cccc;">#</span><span style="color: #1b91ff;">555</span>;
+        color:  <span style="color:#cccc;">#</span><span style="color: #1b91ff;">fff</span>;
+    }
+    </code>
 </pre>
-				</section>
-			</section>
-			<!--SlideOut-->
-			<section> 
-				<p class="fragment highlight-red">SlideOut</p>
-			</section>
-			<!--Parallax-->
-			<section>
-				<section>
-					<p class="fragment highlight-red">Parallax</p>
-				</section>
-				<section>
-					<p><span class="fragment highlight-blue">Parallax.js</span> é um efeitos simples de rolagem de paralaxe inspirado no <span class="fragment highlight-blue">Spotify.com</span>
-					e implementado como um plugin JQuery</p>
-				</section>
-				<section>
-					<img src="imagem/parallax.jpg">
-				</section>
-				<section>
-					<img src="imagem/parallax2.jpg">
-				</section>
-			</section>
-		</div>
-	</div>
+        </section>
+    </section>
+    <!--SlideOut-->
+    <section>
+        <section> 
+            <p class="fragment highlight-red">SlideOut</p>
+        </section>
+        <section>
+            <p><span class="fragment highlight-blue">Slideout</span> é um plugin para criar um menu que funcionará com um deslize na tela (slide), foi feito pensando principalmente em dispositivos mobile sendo leve e fácil de customizar.</p>
+        </section>
+        <section>
+            <p>Como usar</p>
+            <span>1. Você precisa ter um menu (#menu) e um conteúdo
+            principal (#panel) no body.</span><br>
+            <img src="imagem/slideOut1.png">
+        </section>
+        <section>
+            <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
+                <p>2. Coloque o css(index.css)</p><br>
+                <img src="imagem/slideOut2.png" />
+                <img src="imagem/slideOut2.1.png" />
+            </div>  
+        </section>
+        <section>
+            <p>3. Logo após é só adicionar <span class="fragment highlight-blue">&lt;script src=&quot;dist/slideout.min.js&quot;&gt;&lt;/script&gt;</span> e criar uma nova instância com as opções.
+            </p>
+            <img src="imagem/slideOut3.png">
+        </section>
+    </section>
+    <!--Parallax-->
+    <section>
+        <section>
+            <p class="fragment highlight-red">Parallax</p>
+        </section>
+        <section>
+            <p><span class="fragment highlight-blue">Parallax.js</span> é um efeitos simples de rolagem de paralaxe inspirado no <span class="fragment highlight-blue">Spotify.com</span>
+            e implementado como um plugin JQuery</p>
+        </section>
+        <section>
+            <img src="imagem/parallax.jpg">
+        </section>
+        <section>
+            <img src="imagem/parallax2.jpg">
+        </section>
+    </section>
+</div>
+</div>
 <script type="text/javascript" src="js/reveal.js"></script>
 <script type="text/javascript" src="js/configuracaoBasicas.js"></script>
 </body>

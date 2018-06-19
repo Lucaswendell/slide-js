@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pratica - sweetModal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/fakeLoader.css">
+    <link rel="stylesheet" href="css/jquery.sweet-modal.min.css">
+    <link rel="stylesheet" href="css/meu.css">
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 100px;
+            text-align: center;
+            animation-name: qualquer;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            transition: all 0.5;
+        }
+
+        @keyframes qualquer {
+            0% {
+                font-size: 0%;
+            }
+            50% {
+                font-size: 50px;
+                transform: rotate(360deg);
+            }
+            100% {
+                font-size: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>fakeLoader</h1>
+   <div id"fakeLoader"></div>
+</body>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="jquery.sweet-modal.min.js"></script>
+<script src="fakeLoader.js"></script>
+<script src="jquery.scrollUp.js"></script>
+<script src="parallax.js"></script>
+<script src="slideout.min.js"></script>
+<script src="jquery.photobox.js"></script>
+<script type="text/javascript">
+$("#fakeloader").fakeloader({
+    timeToHide:1500,
+    zIndex:"pink",
+    spnner:"tulio.png",
+    bgColor:"pink",
+    image:"tulio.png"
+
+});
+</script>
+
+
+</script>
+
+</html>

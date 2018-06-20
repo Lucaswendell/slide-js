@@ -1,5 +1,146 @@
+.slideout-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 256px;
+  min-height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+.slideout-menu-left {
+  left: 0;
+}
+
+.slideout-menu-right {
+  right: 0;
+  transition: all 0.5s;
+}
+
+.slideout-panel {
+  z-index: 0; 
+  will-change: transform;
+  background-color: #fff; /* A background-color is required */
+  min-height: 100vh;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+  
+}
+/* ----------------------------------------
+Labs page main styles
+---------------------------------------- */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+pre {
+	margin: 0;
+	overflow: scroll;
+	background-color: #eee;
+
+	padding: 10px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+pre .cmt {
+	/* pre comment */
+	color: #aaa;
+}
+
+pre .opt {
+	/* pre option */
+	font-weight: bold;
+}
+
+pre .val {
+	/* pre value */
+	font-style: italic;
+}
+
+code {
+	background-color: #eee;
+	color: #333;
+	display: inline-block;
+	padding: 1px 5px;
+}
+a {
+	color: #F66169;
+	text-decoration: none;
+}
+
+h2 {
+	margin-top: 2.5em;
+	padding-bottom: .2em;
+	border-bottom: 1px solid #eee;
+}
+
+p {
+	color: #666;
+}
+.container {
+	width: 80%;
+	max-width: 620px;
+	margin: auto;
+}
+
+.header {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background-color: #222;
+	color: #fff;
+	border-bottom: #F66169 3px solid;
+}
+
+.view-article {
+	display: block;
+	text-align: center;
+	background-color: #F66169;
+	color: #FAEFDE;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	font-weight: bold;
+	float: right;
+	margin-right: 30px;
+	margin-top: 8px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	-o-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+}
+
+.view-article:hover {
+	color: #111;
+	background-color: #fff;
+}
+
+.light {
+	color: #ccc;
+	font-size: 14px;
+}
+
+
 #scrollUp {
-	background-image: url("../imagens/top.png");
+	background-image: url("../img/top.png");
 	background-repeat: no-repeat;
 	bottom: 20px;
 	right: 20px;
@@ -13,7 +154,9 @@
 	float: left;
 	width: 100%;
 }
-
+.parallax-window {
+	min-height: 450px;
+}
 .themes li {
 	text-align: center;
 	display: block;

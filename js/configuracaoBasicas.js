@@ -1,4 +1,4 @@
 Reveal.initialize({
 		transition: "zoom",
-		slideNumber: true
+		slideNumber: true,
 });
